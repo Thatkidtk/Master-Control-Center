@@ -59,7 +59,7 @@ drivehelp() {
     echo "  finddupes   - Find duplicate files"
     echo "  drivehealth - Check drive health"
     echo "  projectmgr  - Manage projects"
-    echo "  smartsearch - AI-powered file search"
+    echo "  smartsearch - Advanced file search"
     echo "  cloudsync   - Cloud synchronization"
     echo "  mediaprocess- Process media files"
     echo ""

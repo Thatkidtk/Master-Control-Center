@@ -79,7 +79,7 @@ finddupes           # Find and clean duplicate files
 # Advanced Features
 drivehealth         # Drive health monitoring
 projectmgr          # Project management system
-smartsearch         # AI-powered file search
+smartsearch         # Advanced file search with content indexing
 cloudsync           # Multi-cloud synchronization
 ```
 
@@ -154,11 +154,11 @@ smartsearch search "presentation" --type document
 # Interactive duplicate cleanup
 finddupes --interactive
 
-# Generate duplicate report
+# Generate duplicate report (safe, no deletions)
 finddupes --report duplicates.json
 
-# Scan specific extensions only  
-finddupes --extensions .jpg .png .mp4
+# Dry run to preview what would be organized
+finddupes --scan-only --extensions .jpg .png .mp4
 ```
 
 ### Health Monitoring
@@ -248,6 +248,16 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - **Python Community** - Amazing libraries and tools
 - **macOS Community** - System integration insights
 - **Open Source Contributors** - Inspiration and best practices
+
+## 🔬 Technical Notes
+
+**No machine learning models are used.** This system relies on proven, deterministic algorithms:
+- **Duplicate Detection**: MD5 hashing with path-based ranking algorithms
+- **File Search**: Full-text indexing and metadata analysis
+- **Drive Health**: Real SMART data via `smartctl`
+- **Organization**: Rule-based file categorization and Unix utilities
+
+This ensures reliable, reproducible results without the unpredictability of ML models.
 
 ## 📞 Support
 
