@@ -1,7 +1,7 @@
 # 🎛️ Master Control Center
 ### The Ultimate External Drive Management System
 
-> Transform any external drive into an AI-powered productivity ecosystem with automated organization, intelligent backups, and advanced file management.
+> Transform any external drive into an automated productivity system with smart organization, intelligent backups, and advanced file management using proven algorithms.
 
 ![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)
 ![Platform](https://img.shields.io/badge/platform-macOS-lightgrey.svg)
@@ -10,14 +10,14 @@
 
 ## 🚀 What Makes This Special?
 
-This isn't just file organization - it's a complete **AI-powered productivity operating system** for your external drive:
+This isn't just file organization - it's a complete **automated productivity operating system** for your external drive:
 
 ### 🔥 Core Features
 
-- **🔍 Intelligent Duplicate Detection** - ML-powered duplicate finder with conflict resolution
+- **🔍 Intelligent Duplicate Detection** - Hash-based duplicate finder with automated conflict resolution
 - **🛡️ Drive Health Guardian** - Real-time monitoring with SMART data analysis  
 - **🎯 Project Lifecycle Manager** - Complete project management with automated structures
-- **🔍 Smart Search Engine** - AI-powered file search with content indexing
+- **🔍 Smart Search Engine** - Advanced file search with content indexing and metadata analysis
 - **☁️ Multi-Cloud Sync** - Intelligent synchronization with conflict resolution
 - **🎬 Advanced Media Processing** - Photo organization, video compression, thumbnail generation
 - **🎛️ Master Control Dashboard** - Unified interface for all systems
@@ -97,10 +97,10 @@ cloudsync           # Multi-cloud synchronization
 
 | System | Description | Advanced Features |
 |--------|-------------|-------------------|
-| `duplicate_hunter.py` | Duplicate detection | ML recommendations, interactive cleanup, conflict resolution |
+| `duplicate_hunter.py` | Duplicate detection | Hash-based analysis, interactive cleanup, automated conflict resolution |
 | `drive_guardian.py` | Health monitoring | SMART data analysis, automated alerts, trend tracking |
 | `project_manager.py` | Project management | Lifecycle tracking, automated structures, progress visualization |
-| `smart_search.py` | File search engine | Content indexing, AI tagging, relevance ranking |
+| `smart_search.py` | File search engine | Content indexing, metadata analysis, relevance ranking |
 | `cloud_sync.py` | Multi-cloud sync | Conflict resolution, intelligent merging, status tracking |
 | `media_processor.sh` | Media automation | EXIF extraction, video compression, thumbnail generation |
 
@@ -142,7 +142,7 @@ projectmgr update --id abc12345 --progress 75
 # Build search index
 smartsearch index
 
-# Search with AI
+# Advanced search
 smartsearch search "budget spreadsheet 2024"
 
 # Search by file type
@@ -265,4 +265,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 **[Install Now](#installation)** and turn any external drive into a productivity powerhouse!
 
-> *"This isn't just storage - it's an AI-powered productivity ecosystem!"*
+> *"This isn't just storage - it's an intelligent automation ecosystem built on proven algorithms!"*

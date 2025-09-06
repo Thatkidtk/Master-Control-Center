@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 🔍 INTELLIGENT DUPLICATE FILE HUNTER
-Advanced duplicate detection with AI-powered analysis
+Advanced duplicate detection using MD5 hash analysis and path-based ranking
 """
 
 import os
@@ -137,7 +137,7 @@ class DuplicateHunter:
         return report
     
     def _get_recommendation(self, files):
-        """AI-powered recommendation for which files to keep/delete"""
+        """Algorithm-based recommendation for which files to keep/delete using path scoring"""
         # Sort by: newest first, then by path preference
         priority_paths = ['Edited', 'Final', 'Best', 'Projects']
         
@@ -213,7 +213,7 @@ class DuplicateHunter:
         print(f"Total data processed: {Colors.GREEN}{self.stats['processed_size']/(1024*1024*1024):.2f} GB{Colors.END}")
 
 def main():
-    parser = argparse.ArgumentParser(description='🔍 Intelligent Duplicate File Hunter')
+    parser = argparse.ArgumentParser(description='🔍 Intelligent Duplicate File Hunter - Hash-based Detection')
     parser.add_argument('--path', default='/Volumes/Seagate 2TB', help='Root path to scan')
     parser.add_argument('--extensions', nargs='+', help='File extensions to scan (e.g., .jpg .mp4)')
     parser.add_argument('--min-size', type=int, default=1024*1024, help='Minimum file size in bytes (default: 1MB)')

@@ -44,7 +44,7 @@ driveauto        # Run full automation
 |---------|-------------|---------|
 | `drivehealth` | Drive health monitoring | Real-time SMART data |
 | `projectmgr` | Project management | `projectmgr create "Website"` |
-| `smartsearch` | AI-powered search | `smartsearch search "budget"` |
+| `smartsearch` | Advanced file search | `smartsearch search "budget"` |
 | `cloudsync` | Multi-cloud sync | `cloudsync status` |
 
 ## 🎪 5-Minute Demo

@@ -45,7 +45,7 @@ class MasterControl:
             },
             "duplicates": {
                 "script": "duplicate_hunter.py",
-                "description": "Intelligent duplicate detection",
+                "description": "Hash-based duplicate detection",
                 "commands": ["--interactive", "--report duplicates.json"]
             },
             "health": {
@@ -60,7 +60,7 @@ class MasterControl:
             },
             "search": {
                 "script": "smart_search.py",
-                "description": "AI-powered file search",
+                "description": "Advanced file search with indexing",
                 "commands": ["index", "search QUERY", "stats"]
             },
             "cloud": {
@@ -117,7 +117,7 @@ class MasterControl:
             status = f"{Colors.GREEN}✓{Colors.END}" if script_path.exists() else f"{Colors.RED}✗{Colors.END}"
             
             print(f"{status} {Colors.BOLD}{name:<12}{Colors.END} - {system['description']}")
-            print(f"   {Colors.CYAN}Examples: {' | '.join(system['commands'][:3])}{Colors.END}")
+            print(f"   {Colors.CYAN}Usage: {' | '.join(system['commands'][:3])}{Colors.END}")
         
         print(f"\n{Colors.BOLD}{Colors.YELLOW}⚡ QUICK COMMANDS{Colors.END}")
         print(f"{Colors.BLUE}{'='*60}{Colors.END}")
