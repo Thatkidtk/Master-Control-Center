@@ -1,0 +1,22 @@
+# 🎛️ Master Control Center - Python Requirements
+# Ultimate External Drive Management System
+
+# Core system monitoring
+psutil>=5.8.0                   # System and disk monitoring
+
+# Optional but recommended packages
+# These will be installed automatically by the installer if available
+
+# For advanced features (install via Homebrew):
+# - exiftool: Enhanced photo metadata extraction
+# - ffmpeg: Video processing and compression  
+# - smartmontools: Drive health monitoring with SMART data
+# - pdftotext (poppler): PDF content extraction for search indexing
+
+# Development dependencies (for contributors)
+# pytest>=6.0.0                # Testing framework
+# black>=22.0.0                # Code formatting
+# flake8>=4.0.0                # Code linting
+
+# Note: Most functionality works with just Python 3.7+ standard library
+# Additional tools enhance the experience but are not required

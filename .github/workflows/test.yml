@@ -1,0 +1,52 @@
+name: Test Master Control Center
+
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  test:
+    runs-on: macos-latest
+    
+    strategy:
+      matrix:
+        python-version: [3.7, 3.8, 3.9, '3.10', '3.11']
+    
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Set up Python ${{ matrix.python-version }}
+      uses: actions/setup-python@v3
+      with:
+        python-version: ${{ matrix.python-version }}
+    
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install psutil
+        # Install optional tools via Homebrew
+        brew install exiftool ffmpeg smartmontools
+    
+    - name: Test installation script
+      run: |
+        # Create a test directory
+        mkdir -p /tmp/test-drive
+        # Run installer in test mode
+        ./install.sh /tmp/test-drive
+    
+    - name: Test master control center
+      run: |
+        cd /tmp/test-drive
+        python3 Scripts/master_control.py dashboard
+    
+    - name: Test individual systems
+      run: |
+        cd /tmp/test-drive
+        # Test organization system
+        bash Scripts/organize.sh report
+        # Test health monitoring
+        python3 Scripts/drive_guardian.py
+        # Test project management
+        python3 Scripts/project_manager.py list
